@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc Nghiệm Khám Phá Bản Thân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container" id="quiz-container" style="display: flex; flex-direction: column; align-items: center;">
+        <div id="quiz-header">
+            <img id="club-logo" src="logo.png" alt="Logo CLB" style="width:120px;height:120px;display:block;margin:0 auto 18px auto;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.12);">
+            <h1 style="display:none;">HÀNH TRÌNH SÁNG TẠO</h1>
+            <p id="welcome-text" style="display:block; font-size:1.2em; margin-bottom:16px;">Cùng khám phá xem bạn sẽ là mảnh ghép nào của chúng tớ nhé!</p>
+            <p id="intro-text" style="display:none;">Khám phá xem bạn là mảnh ghép hoàn hảo nào trong câu lạc bộ của chúng mình nhé!</p>
+            <button id="start-btn" class="start-btn">Bắt đầu</button>
+        </div>
+
+        <div id="quiz-body" style="display:none;"></div>
+
+        <div class="progress-container" style="display:none;">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

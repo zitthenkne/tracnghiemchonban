@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1976d2 0%, #e53935 100%);
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.quiz-container {
+    background: rgba(255,255,255,0.97);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(25,118,210,0.18), 0 2px 8px rgba(229,57,53,0.12);
+    padding: 48px 36px 36px 36px;
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    border: 2px solid #1976d2;
+}
+
+.start-btn {
+    display: block;
+    margin: 24px auto 0 auto;
+    background: linear-gradient(90deg,#1976d2 0%,#e53935 100%);
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 18px 54px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 24px rgba(25,118,210,0.18), 0 2px 8px rgba(229,57,53,0.12);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(25,118,210,0.12);
+}
+.start-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 36px rgba(25,118,210,0.22), 0 4px 16px rgba(229,57,53,0.18);
+    background: linear-gradient(90deg,#e53935 0%,#1976d2 100%);
+}
+
+#quiz-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#club-logo {
+    animation: logoPop 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+    background: linear-gradient(135deg,#1976d2 0%,#e53935 100%);
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 16px rgba(25,118,210,0.12), 0 2px 8px rgba(229,57,53,0.10);
+}
+
+@keyframes logoPop {
+    0% { transform: scale(0.5); opacity: 0; }
+    80% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.question-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.option {
+    display: block;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option:hover {
+    background-color: #f0e6ff;
+    border-color: #5b2ab5;
+}
+
+.option input[type="radio"] {
+    display: none;
+}
+
+.result-image {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#quiz-body h2 {
+    text-align: center;
+    color: #5b2ab5;
+}
+
+#quiz-body {
+    line-height: 1.6;
+}
+
+/* --- Thanh tiến trình --- */
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 10px;
+    background-color: #5b2ab5;
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out;
+}
