@@ -219,6 +219,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 scores[group] += questionScores[group];
             }
         });
+
+        // Áp dụng hệ số nhân cho điểm P
+        scores.P = Math.round(scores.P * 1.3);
         
         progressBar.style.width = '100%';
         introText.textContent = "Cảm ơn bạn đã hoàn thành bài trắc nghiệm!";
